@@ -18,7 +18,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -47,8 +47,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#get-involved">GET INVOLVED</a></li>
+            <li><a href="#jumbotron">SCISO</a></li>
             <li><a href="#who">WHO WE ARE</a></li>
+            <li><a href="#get-involved">GET INVOLVED</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,8 +61,16 @@
       <div class="container">
         <h1>Faculty of Science and Social Sciences</h1>
         <p>Our goal is to inspire students and help them improve their <strong>learning curve</strong> and <strong>skills</strong></p>
-        <p><a class="btn btn-default btn-lg" role="button">Learn more &raquo;</a></p>
-        <img src="images/buu_te.png" title="sakaeo.buu logo" alt="sakaeo.buu.ac.th">
+        <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <iframe width="560" height="315" src="//www.youtube.com/embed/29714SBp098?showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <img src="images/code.png" title="sakaeo.buu logo" alt="sakaeo.buu.ac.th">
       </div>
     </div>
 
@@ -119,7 +128,11 @@
         <img src="images/one-million-bottom-brand.png">
         <!-- <p>&copy; Burapha University Sakaeo Campus 2014</p> -->
       </div>
+      <div id="back-to-top">
+        <a href="#jumbotron"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+      </div>
     </footer>
+
 
 
     <!-- Bootstrap core JavaScript
