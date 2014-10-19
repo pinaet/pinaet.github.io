@@ -1,7 +1,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+/* Move down content because we have a fixed navbar that is 50px tall */
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 .jumbotron {
@@ -33,6 +35,14 @@ ul.nav {
 	padding: 0 50px;
 }
 
+.modal-dialog {
+	position: absolute;
+	left: 50%;
+	margin-left: -300px; /*-50% | -300px*/
+	top: 50%;
+	margin-top: -173px; /*-50% | -173px*/
+}
+
 .modal-content iframe {
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -56,7 +66,7 @@ ul.nav {
 }
 
 #back-to-top {
-	position: absolute;
+	position: fixed; /*absolute | fixed*/
 	bottom: 20px;
 	right: 20px;
 }
@@ -117,11 +127,11 @@ body{
 	opacity: .5;
 }
 
-/*.homepage hr {
+.homepage hr {
 	border-top: 1px solid #e74c3c;
 	width: 150px;
 	margin-top: 15px;
-}*/
+}
 
 /*Responsive Styling*/
 @media (max-width: 1199px) {
