@@ -33,6 +33,11 @@ ul.nav {
 	padding: 0 50px;
 }
 
+.jumbotron .form-control {
+	height: 69px;
+	font-size: 36px;
+}
+
 .modal-dialog {
 	position: absolute;
 	left: 50%;
