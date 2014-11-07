@@ -281,3 +281,15 @@ h2.blog-post-title a:hover {
 .center {
   text-align: center;
 }
+
+/* Responsive Styling */
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 991px) { 
+  #subscribe-box h4 {
+    text-align: center;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
