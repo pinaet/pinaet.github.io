@@ -65,7 +65,7 @@ body {
 }
 
 #bottom-section .col-sm-4 {
-	min-height: 300px; /*change from 300px*/
+	min-height: 420px; /*change from 300px*/
 	background-size: 100%;
 	background-repeat: no-repeat;
 	text-align: center;
