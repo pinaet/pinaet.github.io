@@ -5,6 +5,7 @@
 body {
   font-family: 'THSarabunNew', Sans-Serif;
   font-size: 2.2em;
+  padding-bottom: 0;
 }
 
 .top-bar {
@@ -22,15 +23,9 @@ body {
 .navbar-default .navbar-nav>li>a {
   color: #2c3e50;
 }
-
-
-.menu-right {
-  /*padding: 10px;
-  background-color: #fff;*/
-}
 /* End of Navigation part ================ */
 
-.homepage {
+.homepage hr{
   border-top: 1px solid #f1c40f;
   width: 150px;
   margin-top: 15px;
@@ -43,7 +38,23 @@ body {
   height: 194px;
 }
 
+/* BOTTOM LINK */
+#bottom-link {
+  background-color: #ecf0f1;
+}
 
+#bottom-link hr{
+  border-top: 1px solid #95a5a6;
+}
+
+#bottom-link .container{
+  background-color: #ecf0f1;
+  padding-bottom: 20px;
+}
+
+
+/* FACEBOOK SOCIAL PLUGIN
+-------------------------------------------------- */
 .container .fb-like-box, .fb-like-box span, .fb-like-box.fb_iframe_widget span iframe {
   width: 100% !important;
   /*height: 200px !important;*/
