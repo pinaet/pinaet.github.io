@@ -44,8 +44,8 @@ body {
 }
 
 
-.container .fb-like-box {
-  data-width="900px";
+.container .fb-like-box, .fb-like-box span, .fb-like-box.fb_iframe_widget span iframe {
+  width: 100% !important;
 }
 
 
