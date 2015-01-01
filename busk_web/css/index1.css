@@ -42,3 +42,12 @@ body {
   width: 350px;
   height: 194px;
 }
+
+
+.container .fb-like-box {
+  data-width="900px";
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
