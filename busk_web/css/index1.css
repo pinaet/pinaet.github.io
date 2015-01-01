@@ -28,7 +28,7 @@ body {
 .homepage hr{
   border-top: 1px solid #f1c40f;
   width: 150px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* THUMBNAIL NEWS
@@ -38,26 +38,30 @@ body {
   height: 194px;
 }
 
-/* BOTTOM LINK */
+/* BOTTOM LINK 
+-------------------------------------------------- */
 #bottom-link {
   background-color: #ecf0f1;
 }
 
 #bottom-link hr{
-  border-top: 1px solid #95a5a6;
+  border-top: 1px solid #bdc3c7;
 }
 
 #bottom-link .container{
   background-color: #ecf0f1;
-  padding-bottom: 20px;
+  padding: 20px;
 }
-
 
 /* FACEBOOK SOCIAL PLUGIN
 -------------------------------------------------- */
 .container .fb-like-box, .fb-like-box span, .fb-like-box.fb_iframe_widget span iframe {
   width: 100% !important;
   /*height: 200px !important;*/
+}
+
+footer a {
+  /*color: black;*/
 }
 
 
