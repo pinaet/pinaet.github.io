@@ -38,7 +38,7 @@ body {
   height: 194px;
 }
 
-/* BOTTOM LINK 
+/* BOTTOM LINK (FOOTER PART)
 -------------------------------------------------- */
 #bottom-link {
   background-color: #ecf0f1;
@@ -55,15 +55,13 @@ body {
 
 /* FACEBOOK SOCIAL PLUGIN
 -------------------------------------------------- */
+/* to make the plugin fit the wide of screen */
 .container .fb-like-box, .fb-like-box span, .fb-like-box.fb_iframe_widget span iframe {
   width: 100% !important;
   /*height: 200px !important;*/
 }
 
-footer a {
-  /*color: black;*/
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+/* to fix the CAROUSEL to adapt to all devices */
