@@ -1,0 +1,52 @@
+/* import files
+-------------------------------------------------- */
+@import url(index1.css);
+
+
+/* HEAD PART OF THE PAGE
+-------------------------------------------------- */
+.top-bar {
+	background-color: rgba( 255,255,255, 0.8);
+	margin-bottom: -77px;
+	padding-bottom: 5px;
+}
+
+.jumbotron {
+	background-image: url("../images/home/home-01.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	/*background-position:center;*/
+
+	text-align: center;
+	color: white;
+
+	padding-top: 140px;
+}
+ 
+.homepage hr{
+	border-top: 1px solid #f1c40f;
+	width: 200px;
+	margin-top: 10px;
+}
+.homepage h1 {
+	font-weight: bold;
+}
+
+/* BUSK INTRODUCTION VIDEO
+-------------------------------------------------- */
+#video-background { 
+	position: absolute;
+	bottom: 50%; 
+	right: 50%;
+	transform: translateX(-50%) translateY(-50%)
+	min-width: 100%; 
+	min-height: 100%; 
+	width: auto; 
+	height: auto;
+	z-index: -1000; 
+	overflow: hidden
+}

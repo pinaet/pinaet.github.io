@@ -17,6 +17,7 @@ body {
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   border-bottom: 2px solid;
+  padding-bottom: 13px; /*so 15px doesn't shake 2px more*/
   color: #f1c40f;
 }
 
