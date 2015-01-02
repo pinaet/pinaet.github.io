@@ -44,7 +44,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right menu-right">
-            <li><a href="#">หน้าหลัก</a></li>
+            <li class="active"><a href="#">หน้าหลัก</a></li>
             <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
             <li><a href="#">ระบบสารสนเทศ</a></li>
             <li><a href="#">หน่วยงานภายใน</a></li>
@@ -102,13 +102,25 @@
 
 <!-- BUSK INTRODUCTION VIDEO
 ================================================== -->
+    
+<!--     <div class="vdo-wrapper">
+      <div class="vdo-desc">
+        <button id="vidpause">หยุดเล่น</button>
+      </div>
+        <video autoplay loop muted poster="videos/busk.jpg.jpg" id="bgvid">
+          <source src="videos/busk.webm" type="video/webm">
+          <source src="videos/busk.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
     <div>
-      <video id="video-background" preload autoplay muted>
-        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-        <!-- <source src="movie.ogg" type="video/ogg"> -->
-        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/webm">
-        Your browser does not support the video tag.
-      </video>
+      <div class="vdo-desc">
+        <button id="vidpause">หยุดเล่น</button>
+      </div>
+        <video autoplay loop muted poster="videos/busk.jpg.jpg" id="bgvid">
+          <source src="videos/busk-1.webm" type="video/webm">
+          <source src="videos/busk-1.mp4" type="video/mp4">
+        </video>
     </div>
     
 
@@ -139,5 +151,30 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+      var vid = document.getElementById("bgvid");
+      var pauseButton = document.getElementById("vidpause");
+      function vidFade() {
+        vid.classList.add("stopfade");
+      }
+      vid.addEventListener('ended', function() {
+        // only functional if "loop" is removed
+        vid.pause();
+        // to capture IE10
+        vidFade();
+      });
+      pauseButton.addEventListener("click", function() {
+        vid.classList.toggle("stopfade");
+        if (vid.paused) {
+          vid.play();
+          pauseButton.innerHTML = "หยุดเล่น";
+        } else {
+        vid.pause();
+          pauseButton.innerHTML = "เล่นต่อ";
+        }
+      })
+    </script>
+
   </body>
 </html>
